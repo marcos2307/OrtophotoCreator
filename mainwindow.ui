@@ -39,13 +39,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>620</width>
+     <width>800</width>
      <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOrtophotoCreator">
     <property name="title">
-     <string>OrtophotoCreator</string>
+     <string>OrthophotoCreator</string>
     </property>
    </widget>
    <addaction name="menuOrtophotoCreator"/>
@@ -55,7 +55,7 @@
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
