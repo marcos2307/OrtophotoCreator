@@ -6,6 +6,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QGraphicsScene *scene;
+    QPixmap image;
+    image.load("/home/rocinante/OrtophotoCreator/odm_orthophoto.tif");
+    scene = new QGraphicsScene(this);
+    scene->addPixmap(image);
+    scene->setSceneRect(image.rect());
+    ui->imagen->setScene(scene);
 }
 
 MainWindow::~MainWindow()
