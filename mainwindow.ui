@@ -10,6 +10,9 @@
     <height>714</height>
    </rect>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -23,9 +26,6 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QGraphicsView" name="imagen"/>
-      </item>
       <item>
        <layout class="QFormLayout" name="formLayout">
         <item row="0" column="0">
@@ -58,13 +58,6 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
-         <widget class="QPushButton" name="pushButton_3">
-          <property name="text">
-           <string>Volumen</string>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="1">
          <widget class="QLineEdit" name="lineEdit_2">
           <property name="sizePolicy">
@@ -78,6 +71,13 @@
             <width>169</width>
             <height>16777215</height>
            </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Volumen</string>
           </property>
          </widget>
         </item>
@@ -109,6 +109,24 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="documentTitle">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
      </widget>
     </item>
    </layout>
@@ -119,7 +137,7 @@
      <x>0</x>
      <y>0</y>
      <width>1252</width>
-     <height>36</height>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOrtophotoCreator">

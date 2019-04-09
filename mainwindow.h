@@ -13,10 +13,11 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+    void image_clicked(QMouseEvent *event);
     ~MainWindow();
 
+
 private slots:
-    void on_btn_browse_clicked();
 
 private:
     Ui::MainWindow *ui;
